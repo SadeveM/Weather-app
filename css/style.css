@@ -4,3 +4,56 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #202020;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-app {
+    background-color: #141414;
+
+    width: 30%;
+    height: 75%;
+    border-radius: 10px;
+    box-shadow: -1px -1px 8px black;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search {
+    width: 100%;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search input {
+    height: 20px;
+    width: 60%;
+
+    border: 0;
+    outline: 0;
+    padding: 7px;
+    
+    border-radius: 20px;
+}
+
+.search img {
+    height: 15px;
+    padding: 10px 12px;
+
+    background-color: white;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
