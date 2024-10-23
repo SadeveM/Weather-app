@@ -3,6 +3,8 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+
+    color: white;
 }
 
 .container {
@@ -19,18 +21,19 @@ body {
     background-color: #141414;
 
     width: 30%;
-    height: 75%;
+    height: max-content;
     border-radius: 10px;
     box-shadow: -1px -1px 8px black;
 
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    padding: 40px 0;
 }
 
 .search {
     width: 100%;
-    margin-top: 40px;
 
     display: flex;
     justify-content: space-evenly;
@@ -57,3 +60,60 @@ body {
     cursor: pointer;
 }
 
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.weather img {
+    margin: 0 auto;
+    height: 145px;
+}
+
+.weather h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+
+    margin: 0;
+}
+
+.weather p {
+    margin: 0;
+}
+
+.details {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.details img {
+    margin-top: 5px;
+    height: 25px;
+}
+
+.col {
+    display: flex;
+}
+
+.col > div {
+    margin-left: 10px;
+}
+
+.col h3 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.col p {
+    width: 100%;
+    text-align: center;
+}
