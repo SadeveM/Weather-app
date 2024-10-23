@@ -117,3 +117,23 @@ body {
     width: 100%;
     text-align: center;
 }
+
+
+.weather {
+    display: none;
+}
+
+.error {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 51%;
+    left: 40%;
+    font-size: 15px;
+}
+
+@media (max-width: 430px) {
+    .error {
+        left: 15%;
+    }
+}
