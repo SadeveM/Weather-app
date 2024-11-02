@@ -47,7 +47,7 @@ async function getWeather(latitude, longitude) {
     cityName.innerHTML = data.name;
     humidty.innerHTML = data.main.humidity + "%";
     wind.innerHTML = ((data.wind.speed * 3600)/1000).toFixed(2)+ "km/h";
-    weatherImg.src = `images/${(data.weather[0].main)}.png`;
+    weatherImg.src = `images/${(data.weather[0].main).toLowerCase()}.png`;
 
     interface.style.display = "flex";
 }
