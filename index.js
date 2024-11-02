@@ -1,5 +1,5 @@
 const apiKey = "059dd9cbf6a5c909bc31c50265fc6f75";
-const geocodingAPI = "http://api.openweathermap.org/geo/1.0/direct?";
+const geocodingAPI = "https://api.openweathermap.org/geo/1.0/direct?";
 const weatherAPI = "https://api.openweathermap.org/data/2.5/weather?";
 
 const interface = document.querySelector(".weather");
