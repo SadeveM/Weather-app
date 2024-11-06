@@ -45,9 +45,15 @@ body {
 
     border: 0;
     outline: 0;
-    padding: 7px;
+    padding: 10px 15px;
     
     border-radius: 20px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 .search img {
@@ -136,4 +142,45 @@ body {
     .error {
         left: 15%;
     }
+}
+
+/* Add loading spinner */
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Improve input styling */
+.search input {
+    height: 20px;
+    width: 60%;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Improve error message positioning */
+.error {
+    text-align: center;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45%;
 }
